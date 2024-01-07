@@ -15,7 +15,7 @@ export const WidgetsScreen: React.FC<IWidgetsScreen> = () => {
                 <div className="rounded-3xl widgets-img h-[500px] w-[500px]"></div>
             </div>
             <div className="col-start-3 col-span-8 flex justify-start items-center mb-medium3">
-                <img className="image1 h-[300px] w-[300px] rounded-3xl"></img>
+                <div className="widget-image1 h-[300px] w-[300px] rounded-3xl"></div>
                 <div className="ml-large3">
                     <div className="text-highlight font-semibold">Task Master</div>
                     <span className="italic">Stay on top of your daily goals. <br/>Add, prioritize, and check off tasks as you conquer your to-do list</span>
@@ -26,10 +26,10 @@ export const WidgetsScreen: React.FC<IWidgetsScreen> = () => {
                     <div className="text-highlight font-semibold">Agile Flow</div>
                     <span className="italic">Visualize your projects with a Kanban board. <br/>Drag and drop tasks through stages for seamless project management</span>
                 </div>
-                <img className="image1 h-[300px] w-[300px] rounded-3xl"></img>
+                <div className="widget-image2 h-[300px] w-[450px] rounded-3xl"></div>
             </div>
             <div className="col-start-3 col-span-8 flex justify-start items-center">
-                <img className="image1 h-[300px] w-[300px] rounded-3xl"></img>
+                <div className="widget-image3 h-[300px] w-[300px] rounded-3xl"></div>
                 <div className="ml-large3">
                     <div className="text-highlight font-semibold">Time Zen</div>
                     <span className="italic">Boost productivity with the Pomodoro technique. <br/>Break your work into intervals, staying focused and refreshed throughout your tasks</span>

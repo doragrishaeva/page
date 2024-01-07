@@ -1,3 +1,18 @@
 .widgets-img {
     background: url('../../../assets/widgets-screen.png') center / contain no-repeat;
 }
+
+.widget-image1 {
+    background: url('../../../assets/widgets1.png') 0% / contain no-repeat;
+    transform: rotate(5deg);
+}
+
+.widget-image2 {
+    background: url('../../../assets/widgets2.png') 45% / cover no-repeat;
+    transform: rotate(-5deg);
+}
+
+.widget-image3 {
+    background: url('../../../assets/widgets3.png') 45% / cover no-repeat;
+    transform: rotate(5deg);
+}
