@@ -9,12 +9,13 @@ export default {
       transparent: 'transparent',
       text: '#282828',
       highlight: '#8808cb',
-      secondary: '#f0f0f0'
+      secondary: '#f0f0f0',
+      description: '#252525'
     },
     extend: {
      boxShadow: {
-        'md': '0px 0px 3px 0px rgba(87, 225, 195, 1)',
-        'lg': '0px 0px 6px 0px rgba(87, 225, 195, 1)',
+        'md': '0px 0px 4px 0px rgba(0, 0, 0, 0.2)',
+        'lg': '0px 0px 2px 0px rgba(0, 0, 0, 0.3)',
       },
       spacing: {
         small1: '4px',

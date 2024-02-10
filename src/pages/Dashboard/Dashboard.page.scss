@@ -1,0 +1,23 @@
+// .dashboard-bg {
+
+//     height: 100vh;
+//     width: 100vw;
+// }
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../assets/dashboard-bg.png') center / cover no-repeat;
+    opacity: 0.1; /* Adjust background opacity */
+    z-index: -1; /* Ensure the background stays behind the content */
+  }
