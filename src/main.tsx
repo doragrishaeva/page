@@ -7,7 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './utils';
 
 const router = createBrowserRouter([
-  { path: "/", element: <LandingPage></LandingPage> },
+  { path: "/page/", element: <LandingPage></LandingPage> },
   { path: "/blog", element: <BlogPage></BlogPage> },
   { path: "/auth", element: <AuthPage></AuthPage> },
   { path: "/dashboard", element: <DashboardPage></DashboardPage> },
