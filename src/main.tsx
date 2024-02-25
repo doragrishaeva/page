@@ -8,11 +8,11 @@ import { theme } from './utils';
 
 const router = createBrowserRouter([
   { path: "/page/", element: <LandingPage></LandingPage> },
-  { path: "/blog", element: <BlogPage></BlogPage> },
-  { path: "/auth", element: <AuthPage></AuthPage> },
-  { path: "/dashboard", element: <DashboardPage></DashboardPage> },
-  { path: "/settings", element: <SettingsPage></SettingsPage> },
-  { path: "/widgets", element: <WidgetsPage></WidgetsPage> }
+  { path: "page/blog", element: <BlogPage></BlogPage> },
+  { path: "page/auth", element: <AuthPage></AuthPage> },
+  { path: "page/dashboard", element: <DashboardPage></DashboardPage> },
+  { path: "page/settings", element: <SettingsPage></SettingsPage> },
+  { path: "page/widgets", element: <WidgetsPage></WidgetsPage> }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

@@ -10,7 +10,7 @@ export const LandingPage: React.FC<ILandingPage> = () => {
 
     const goToAuth = (login: boolean = false) => {
         const stateParam = { login };
-        navigate('/auth', { state: stateParam });
+        navigate('/page/auth', { state: stateParam });
     };
     
     return (

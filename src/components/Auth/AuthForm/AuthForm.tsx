@@ -26,7 +26,7 @@ export const AuthForm: React.FC<IAuthForm> = ({ isLogin }) => {
     };
 
     const goToDashboard = () => {
-        navigate('/dashboard');
+        navigate('/page/dashboard');
     };
 
     return (
