@@ -1,12 +1,17 @@
 import React from 'react';
 
-import { Pixi } from '../../components/Dashboard';
 import './Dashboard.page.scss';
+import { ToDoList } from '../../components/widgets/ToDoList/ToDoList';
+import { DndProvider } from 'react-dnd';
+import { Dashboard } from '../../components/Dashboard';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 export interface IDashboardPage {}
 
 export const DashboardPage: React.FC<IDashboardPage> = () => {
-    return <div className='wrapper'>
-        <Pixi></Pixi>
-    </div>;
+    return (
+        <DndProvider backend={HTML5Backend}>
+            <Dashboard />
+        </DndProvider>
+    )
 };

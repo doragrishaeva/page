@@ -1,1 +1,1 @@
-export * from './Pixi/Pixi';
+export * from './DashboardComponent/Dashboard';

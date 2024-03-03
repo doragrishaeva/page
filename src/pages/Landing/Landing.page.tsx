@@ -21,13 +21,13 @@ export const LandingPage: React.FC<ILandingPage> = () => {
             <div className="col-start-2 col-end-12">
                 <MainScreen onClick={goToAuth}></MainScreen>
             </div>
-            <div className="mb-large3 col-start-2 col-end-12">
+            <div className="mb-large3 col-start-2 col-end-12" id="Dashboard">
                 <DashboardScreen></DashboardScreen>
             </div>
-            <div className="bg-secondary col-span-full pb-large3">
+            <div className="bg-secondary col-span-full pb-large3" id="Widgets">
                 <WidgetsScreen></WidgetsScreen>
             </div>
-            <div className="col-start-2 col-end-12">
+            <div className="col-start-2 col-end-12" id="Try It Out">
                 <FinalScreen onClick={goToAuth}></FinalScreen>
             </div>
         </div>
