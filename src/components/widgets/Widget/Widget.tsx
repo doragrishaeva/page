@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useDrag } from 'react-dnd';
 
 export interface IWidget {
@@ -9,28 +10,28 @@ export interface IWidget {
 
 export const Widget: React.FC<IWidget> = ({ id, left, top }) => {
     const [{ isDragging }, drag] = useDrag(() => ({
-        type: "widget",
+        type: 'widget',
         item: { id, left, top },
-        collect: monitor => ({
-          isDragging: !!monitor.isDragging(),
+        collect: (monitor) => ({
+            isDragging: !!monitor.isDragging(),
         }),
-      }));
-    
-      return (
+    }));
+
+    return (
         <div
-          ref={drag}
-          style={{
-            position: 'absolute',
-            left,
-            top,
-            width: '100px',
-            height: '100px',
-            backgroundColor: 'skyblue',
-            opacity: isDragging ? 0.5 : 1,
-            cursor: 'move',
-          }}
+            ref={drag}
+            style={{
+                position: 'absolute',
+                left,
+                top,
+                width: '100px',
+                height: '100px',
+                backgroundColor: 'skyblue',
+                opacity: isDragging ? 0.5 : 1,
+                cursor: 'move',
+            }}
         >
-          Widget {id}
+            Widget {id}
         </div>
-      );
+    );
 };
